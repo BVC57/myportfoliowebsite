@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Portfolio - Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="icon" href="my1.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(0, 0, 33);
+            color: white;
+        }
+
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100px;
+            background-color: rgb(43, 43, 90);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 25px;
+            font-size: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(204, 204, 204);
+            cursor: pointer;
+            border: 2px dotted green;
+            padding: 3px;
+
+        }
+
+        .call {
+            margin-left: 30px;
+
+        }
+
+        .call a {
+            text-decoration: none;
+            color: white
+        }
+
+        .call span {
+            color: green;
+        }
+
+        .footer {
+            background-color: rgb(43, 43, 90);
+            color: #fff;
+            padding: 40px 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .footer-columns {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .footer-column {
+            flex-basis: 30%;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .footer h3 {
+            color: #fff;
+        }
+
+        .footer p,
+        .footer ul {
+            margin: 10px 0;
+        }
+
+        .footer ul {
+            padding: 0;
+            list-style-type: none;
+        }
+
+        .footer ul li {
+            margin-bottom: 5px;
+        }
+
+        .footer ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .footer ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icon {
+            display: inline-block;
+            margin-right: 10px;
+            color: #fff;
+            font-size: 24px;
+            transition: transform 0.3s;
+        }
+
+        .social-icon:hover {
+            transform: scale(1.2);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100px;
+            background-color: rgb(43, 43, 90);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 25px;
+            font-size: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(204, 204, 204);
+            cursor: pointer;
+            border: 2px dotted green;
+            padding: 3px;
+
+        }
+
+        .feature {
+            margin-bottom: 20px;
+        }
+
+        .feature h2 {
+            color: #666;
+        }
+
+        .feature p {
+            color: #999;
+        }
+
+        /* title for h1 */
+
+        .p1 {
+            font-size: 50px;
+            align-items: center;
+            text-align: center;
+            color: rgb(4, 121, 43);
+        }
+
+        .ptitle {
+            font-size: 30px;
+            color: #fff;
+            font-weight: 1000;
+            margin-left: 300px;
+            padding: 50px;
+
+        }
+
+        .feature {
+            font-size: large;
+            margin-left: 100px;
+            /* border: 2px solid black; */
+
+        }
+
+        .feature h2 {
+            color: #db4848;
+        }
+
+        .feature p {
+            color: whitesmoke;
+        }
+        .feature pre{
+            color: whitesmoke;
+        }
+        .dep{
+            font-size: large;
+            margin-left: 100px;
+        }
+        .dep h2 {
+            color: #db4848;
+        }
+
+        .dep p {
+            color: whitesmoke;
+        }
+
+        /* text underline animation */
+        .cpbody{
+            width: auto;
+            height: auto;
+            border: 2px solid transparent;
+            border-radius: 10px;
+            animation: borderAnimation 2s infinite;
+            margin: 10px;
+        }
+        .box {
+            padding: 20px;
+            width: 50rem;
+            margin-left: 250px;
+            height: 80px;
+            border: 2px solid transparent;
+            border-radius: 10px;
+            animation: borderAnimation1 2s infinite;
+        }
+        .box h1{
+            font-size: 40px;
+            margin-left: 170px;
+            padding: 10px 0;
+        }
+
+        @keyframes borderAnimation1 {
+            0% {
+                border-color: rgb(40, 224, 40);
+                /* Red */
+            }
+
+            25% {
+                border-color: rgba(0, 255, 0, 1);
+                /* Green */
+            }
+
+            50% {
+                border-color: rgba(0, 255, 0, 1);
+                /* Blue */
+            }
+
+            75% {
+                border-color: rgba(0, 255, 0, 1);
+                /* Yellow */
+            }
+
+            100% {
+                border-color: rgba(0, 255, 0, 1);
+                /* Magenta */
+            }
+        }
+
+        @keyframes borderAnimation {
+            0% {
+                border-color: rgba(255, 0, 0, 1);
+                /* Red */
+            }
+
+            25% {
+                border-color: rgb(11, 219, 209);
+                /* Green */
+            }
+
+            50% {
+                border-color: rgba(0, 0, 255, 1);
+                /* Blue */
+            }
+
+            75% {
+                border-color: rgba(255, 255, 0, 1);
+                /* Yellow */
+            }
+
+            100% {
+                border-color: rgba(255, 0, 255, 1);
+                /* Magenta */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <img src="my1.jpg" height="50px" width="50px" />
+                <h3>Chauhan Bhadresh</h3>
+
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="E:\bhadresh\portfolio-website\index.html">Home</a></li>
+                    <li><a href="E:\bhadresh\portfolio-website\Compro.html">Complet Project</a></li>
+                    <li><a href="E:\bhadresh\portfolio-website\aboutme.html">About Me</a></li>
+                    <li><a href="E:\bhadresh\portfolio-website\contact.html">Contact</a></li>
+                    <div class="call">
+                        <a href="https://api.whatsapp.com/send?phone=9898394548"> +91
+                            9898394548<span>(whatsapp)</a></span>
+                    </div>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="box">
+            <h1>My Completed Project</h1>
+        </div>
+    <div class="cpbody">
+        <div class="ptitle">First Project (Hotel managment System)</div>
+        <div class="feature">
+            <h2>Feature 1</h2>
+            <p>Description:- this project creates for big hotel managment using website or admin penal can easly handel.
+            </p>
+            <pre>Created Using php and mysql database</pre>
+        </div>
+
+        <div class="feature">
+            <h2>Feature 2</h2>
+            <p>Description: Customer can easly book the room and cancel room booking. customer also can book party hall,
+                event booking, marragie selebration hall and partys garden into the hotel.</p>
+            <pre>Created Using php and mysql database</pre>
+        </div>
+
+        <div class="feature">
+            <h2>Feature 3</h2>
+            <p>Description: Customer can also order the favrit food using food menu option and order is given into the
+                direct your booking room</p>
+            <pre>Created Using php and mysql database</pre>
+        </div>
+
+        <div class="dep">
+            <h2>Deployment</h2>
+             <p>This project deploy for BCA SEm-6 project work and Final exam in last year.</p>
+        </div>
+
+        <!-- <h2>Lessons Learned</h2>
+        <p>Share your frontend journey lessons here.</p>
+
+        <h2>Future Enhancements</h2>
+        <p>Describe future plans for project enhancements.</p>
+
+        <h2>Conclusion</h2>
+        <p>Conclude your project completion page with a final message.</p> -->
+    </div>
+
+    <div class="cpbody">
+        <div class="ptitle">Second Project (Document Parsing System)</div>
+        <div class="feature">
+            <h2>Feature 1</h2>
+            <p>Description:- this system is usefull for indian custom import/export e-invoice employees.
+            </p>
+            <pre>Created Using React.js, Node.js, AWS Cloud, Python, mysql database</pre>
+        </div>
+
+        <div class="feature">
+            <h2>Feature 2</h2>
+            <p>Description: 1. this project created using Python, AWS Cloud , React.js. 
+                2.document parsing system is work to upload txt file then code is converted into json format and this data show into pdf format.</p>
+            <pre>Created Using React.js, Node.js, AWS Cloud, Python, mysql database</pre>
+        </div>
+
+        <div class="feature">
+            <h2>Feature 3</h2>
+            <p>Description: the pdf is download into s3 bucket which created for lambda trigger is run and save these file.</p>
+            <pre>Created Using React.js, Node.js, AWS Cloud, Python, mysql database</pre>
+        </div>
+
+        <div class="dep">
+            <h2>Deployment</h2>
+             <p>This project deploy for MCA SEM-4 project work and Final exam in last year.</p>
+        </div>
+
+        <!-- <h2>Lessons Learned</h2>
+        <p>Share your frontend journey lessons here.</p>
+
+        <h2>Future Enhancements</h2>
+        <p>Describe future plans for project enhancements.</p>
+
+        <h2>Conclusion</h2>
+        <p>Conclude your project completion page with a final message.</p> -->
+    </div>
+
+    <div class="cpbody">
+        <div class="ptitle">Third Project (SimulTV  website(Live))</div>
+        <div class="feature">
+            <h2>Feature 1</h2>
+            <p>Description:- this project created for Simultv customer who is register with website and subscribe the tv plan and watch the tv on live or Web viewver.
+            </p>
+            <pre>Created Using Angular.js, Node.js, mysql database</pre>
+        </div>
+
+        <div class="feature">
+            <h2>Feature 2</h2>
+            <p>Description: we create the admin penal for client can handel the every customer data easly .</p>
+            <pre>Created Using Angular.js, Node.js, mysql database</pre>
+        </div>
+
+        <div class="feature">
+            <h2>Feature 3</h2>
+            <p>Description: add emails notification and payment getway on user side</p>
+            <pre>Created Using Angular.js, Node.js, mysql database</pre>
+        </div>
+
+        <div class="dep">
+            <h2>Deployment</h2>
+             <p>This project created for american Client and Customer.</p>
+        </div>
+
+        <!-- <h2>Lessons Learned</h2>
+        <p>Share your frontend journey lessons here.</p>
+
+        <h2>Future Enhancements</h2>
+        <p>Describe future plans for project enhancements.</p>
+
+        <h2>Conclusion</h2>
+        <p>Conclude your project completion page with a final message.</p> -->
+    </div>
+
+    <div class="cpbody">
+        <div class="ptitle">Fourth Project (WiseOTT TV website(Live))</div>
+        <div class="feature">
+            <h2>Feature 1</h2>
+            <p>Description:- this project created for WiseOTT customer who is register with website and subscribe the tv plan and watch the tv on live or Web viewver.
+            </p>
+            <pre>Created Using Angular.js, Node.js, mysql database</pre>
+        </div>
+
+        <div class="feature">
+            <h2>Feature 2</h2>
+            <p>Description: we create the admin penal for client can handel the every customer data easly .</p>
+            <pre>Created Using Angular.js, Node.js, mysql database</pre>
+        </div>
+
+        <div class="feature">
+            <h2>Feature 3</h2>
+            <p>Description: add emails notification and payment getway on user side</p>
+            <pre>Created Using Angular.js, Node.js, mysql database</pre>
+        </div>
+
+        <div class="dep">
+            <h2>Deployment</h2>
+             <p>This project created for american Client and Customer.</p>
+        </div>
+
+        <!-- <h2>Lessons Learned</h2>
+        <p>Share your frontend journey lessons here.</p>
+
+        <h2>Future Enhancements</h2>
+        <p>Describe future plans for project enhancements.</p>
+
+        <h2>Conclusion</h2>
+        <p>Conclude your project completion page with a final message.</p> -->
+    </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h3>About Us</h3>
+                    <p>This is my personal website and i describe my expriance into this website.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul>
+                        <li>Web Design</li>
+                        <li>Development</li>
+                        <li>Wordpress Devlopment</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <p>Email: bhadreshkolichuahn57@gmail.com</p>
+                    <p>Phone: +91 9898394548</p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>

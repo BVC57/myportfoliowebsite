@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About Us - Front-End Developer</title>
+  <link rel="icon" href="my1.jpg" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <style>
+ body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100px;
+        background-color: rgb(43, 43, 90) ;
+    }
+    nav ul{
+        display: flex;
+        justify-content: center;
+    }
+    nav ul li{
+        list-style: none;
+        margin: 0 25px;
+        font-size: 20px;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color:white;
+    }
+    nav ul li a:hover{
+        color:rgb(204, 204, 204);
+        cursor: pointer;
+        border: 2px dotted green;
+        padding: 3px;
+        
+    }
+    .call{
+        margin-left: 30px;
+        
+    }
+    .call a{
+        text-decoration: none;
+        color:white
+    }
+    .call span{
+        color: green;
+    }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.myimg img{
+  height: 5%;
+  width: 50%;
+  border-radius: 50px;
+}
+.myimg h1{
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+
+.about-section {
+  padding: 40px 0;
+  background-color: rgb(0,0,33) ;
+}
+
+.about-section h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: rgb(218, 135, 135);
+}
+
+.about-section p {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: white;
+}
+
+.about-section h3 {
+  margin-bottom: 10px;
+  color: rgb(189, 101, 101);
+}
+
+.past-work {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.past-work p{
+  color: black;
+}
+
+.project {
+  flex-basis: calc(50% - 20px);
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #f1f1f1;
+}
+
+.project img {
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+.project h4 p {
+  margin: 0;
+  color: black;
+}
+
+.client-reviews {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.client-reviews p{
+  color: black;
+}
+.review {
+  flex-basis: calc(50% - 20px);
+  padding: 10px;
+  background-color: #f1f1f1;
+}
+
+.review img {
+  max-width: 30%;
+  /* margin-bottom: 10px; */
+}
+
+
+
+.footer {
+  background-color: rgb(43, 43, 90);
+  color: #fff;
+  padding: 40px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-column {
+  flex-basis: 30%;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.footer h3 {
+  color: #fff;
+}
+
+.footer p, .footer ul {
+  margin: 10px 0;
+}
+
+.footer ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.footer ul li {
+  margin-bottom: 5px;
+}
+
+.footer ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer ul li a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icon {
+  display: inline-block;
+  margin-right: 10px;
+  color: #fff;
+  font-size: 24px;
+  transition: transform 0.3s;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
+
+  </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <img src="my1.jpg" height="50px" width="50px"/><h3>Chauhan Bhadresh</h3>
+                
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="E:\bhadresh\portfolio-website\index.html">Home</a></li>
+                    <li><a href="E:\bhadresh\portfolio-website\Compro.html">Complete Project</a></li>
+                    <li><a href="E:\bhadresh\portfolio-website\aboutme.html">About Me</a></li>
+                    <li><a href="E:\bhadresh\portfolio-website\contact.html">Contact</a></li>
+                    <div class="call">
+                       <a href="https://api.whatsapp.com/send?phone=9898394548"> +91 9898394548<span>(whatsapp)</a></span>
+                    </div>
+                </ul>
+               
+            </div>
+        </nav>
+    </header>
+
+  <section class="about-section">
+    <div class="container">
+      <div class="myimg"><img src="my1.jpg" />
+      <h1>Front-End Devloper(react.js,node.js,angular.js,typescript.js)</h1></div>
+      <h2>About Us</h2>
+      <p>Welcome to our Front-End Developer website. We are a team of dedicated developers passionate about creating beautiful and functional user interfaces. With expertise in HTML, CSS, and JavaScript, we strive to build responsive and engaging websites that provide great user experiences.</p>
+      <p>Our mission is to help businesses and individuals establish a strong online presence by delivering high-quality front-end development services. We believe in the power of effective design and efficient coding to create websites that stand out from the crowd.</p>
+      <h3>Experience</h3>
+      <p>With over 5 years of experience in front-end development, we have worked on a wide range of projects for clients across various industries. Our team has the skills and knowledge to tackle complex challenges and deliver exceptional results.</p>
+      <h3>Past Work</h3>
+      <div class="past-work">
+        <div class="project">
+          <img src="reactlogo.jpeg" alt="Project 1">
+          <h4>Project 1</h4>
+          <p>this is create react project using react librairy</p>
+        </div>
+        <div class="project">
+          <img src="node.jpg" alt="Project 2">
+          <h4>Project 2</h4>
+          <p>this project for simultv client to use the node api into backend side.</p>
+        </div>
+      </div><br>
+      <div class="past-work">
+        <div class="project">
+          <img src="logo-wordpress.png" alt="Project 1">
+          <h4>Project 1</h4>
+          <p>this is create react project using react librairy</p>
+        </div>
+        <div class="project">
+          <img src="node.jpg" alt="Project 2">
+          <h4>Project 2</h4>
+          <p>this project for simultv client to use the node api into backend side.</p>
+        </div>
+      </div>
+      <h3>Client Reviews</h3>
+      <div class="client-reviews">
+        <div class="review">
+          <img src="client1.jpg" alt="Client 1">
+          <blockquote>
+            <p>"Working with this front-end developer team was a great experience. They understood our requirements and delivered an exceptional website that exceeded our expectations."</p>
+            <cite>- Client 1</cite>
+          </blockquote>
+        </div>
+        <div class="review">
+          <img src="client2.jpg" alt="Client 2">
+          <blockquote>
+            <p>"The front-end developer team's attention to detail and creativity are commendable. They brought our vision to life with a stunning website design and smooth user experience."</p>
+            <cite>- Client 2</cite>
+          </blockquote>
+        </div>
+      </div><br>
+      <div class="client-reviews">
+        <div class="review">
+          <img src="client3.jpg" alt="Client 1">
+          <blockquote>
+            <p>"Working with this front-end developer team was a great experience. They understood our requirements and delivered an exceptional website that exceeded our expectations."</p>
+            <cite>- Client 3</cite>
+          </blockquote>
+        </div>
+        <div class="review">
+          <img src="client4.jpg" alt="Client 2">
+          <blockquote>
+            <p>"The front-end developer team's attention to detail and creativity are commendable. They brought our vision to life with a stunning website design and smooth user experience."</p>
+            <cite>- Client 4</cite>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-columns">
+        <div class="footer-column">
+          <h3>About Us</h3>
+          <p>This is my personal website and i describe my expriance into this website.</p>
+          <div class="social-icons">
+            <a href="#" class="social-icon">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="social-icon">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="social-icon">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h3>Services</h3>
+          <ul>
+            <li>Web Design</li>
+            <li>Development</li>
+            <li>Wordpress Devlopment</li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Contact</h3>
+          <p>Email: bhadreshkolichuahn57@gmail.com</p>
+          <p>Phone: +91 9898394548</p>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+ </body>
+ </html>
