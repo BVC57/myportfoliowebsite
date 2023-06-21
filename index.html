@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Website</title>
+    <link rel="icon" href="my1.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-color: rgb(0,0,33);
+        color: white;
+    }
+    nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100px;
+        background-color: rgb(43, 43, 90) ;
+    }
+    nav ul{
+        display: flex;
+        justify-content: center;
+    }
+    nav ul li{
+        list-style: none;
+        margin: 0 25px;
+        font-size: 20px;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color:white;
+    }
+    nav ul li a:hover{
+        color:rgb(204, 204, 204);
+        cursor: pointer;
+        border: 2px dotted green;
+        padding: 3px;
+        
+    }
+    .call{
+        margin-left: 30px;
+        
+    }
+    .call a{
+        text-decoration: none;
+        color:white
+    }
+    .call span{
+        color: green;
+    }
+    .left{
+        font-size: 25px;
+        font-weight: bold;
+        margin-right:20%;
+    }
+    .right{
+        margin-right: 5rem;
+    }
+
+    /* ---------------- first section code -------------- */
+    .fsection{
+        display: flex;
+        justify-content: space-around;
+        margin: 80px 0;
+    }
+    .fsection > div{
+        width: 30%;
+    }
+    .fsection .lside{
+        font-size: 3rem;
+        margin: 20px;
+       
+    }
+    .rside img{
+        width: 100%;
+    }
+    .left img{
+        border-radius: 50%;
+        margin: 0 5rem;
+    }
+    #element{
+        color: goldenrod;
+    }
+
+    /* --------------second section ---------------------*/
+    .ssection{
+        max-width: 80vh;
+        height: 60vh;
+    }
+    main hr{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 50px 0;
+    }
+    .ssection .box{
+        background-color: white;
+        width: 202.5vh;
+        height: 2px;
+
+        display: flex;
+    }
+    .ssection .vertical{
+        height: 80px;
+        width: 2px;
+        background-color: white;
+        margin: 0 150px;
+    }
+    .v-title{
+        position: relative;
+        top:75px;
+        width: 150px;
+    }
+    .v-desc{
+        position: relative;
+        top:30px;
+        color:rgb(221, 216, 216);
+        width: 150px;
+        font-size: 18px;
+    }
+
+    .ssection .tit{
+        font-size: 2rem;
+        align-items: center;
+        text-align: center;
+        float: right;
+    }
+   /* ----------- card detail ----------- */
+.s3{
+    display: flex;
+    justify-content: space-around;
+}
+   .card {
+justify-content: space-around;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.card img:hover{
+    border-radius: 80%;
+    margin: 10px 10px;
+}
+
+.card-content {
+  margin-top: 10px;
+}
+
+.card-content h3 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.card-content p {
+  margin: 5px 0;
+}
+
+.card-content a {
+  text-decoration: none;
+  color: blue;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-left: 100px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  background-color: #4CAF50;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+/* ---------------code for footer-------------- */
+
+.footer {
+  background-color: rgb(43, 43, 90);
+  color: #fff;
+  padding: 40px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-column {
+  flex-basis: 30%;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.footer h3 {
+  color: #fff;
+}
+
+.footer p, .footer ul {
+  margin: 10px 0;
+}
+
+.footer ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.footer ul li {
+  margin-bottom: 5px;
+}
+
+.footer ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer ul li a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icon {
+  display: inline-block;
+  margin-right: 10px;
+  color: #fff;
+  font-size: 24px;
+  transition: transform 0.3s;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
+/* client review code */
+
+.client-reviews {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.client-reviews p{
+  color: black;
+}
+.review {
+  flex-basis: calc(50% - 20px);
+  padding: 10px;
+  background-color: #f1f1f1;
+  border: 2px solid black;
+border-radius: 50px;
+}
+
+.review img {
+  max-width: 30%;
+  border-radius: 30px;
+  /* margin-bottom: 10px; */
+}
+.review cite{
+  color: black;
+  margin-left: 300px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+    
+   
+</style>
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <img src="my1.jpg" height="50px" width="50px"/><h3>Chauhan Bhadresh</h3>
+                
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="E:\bhadresh\portfolio-website\index.html">Home</a></li>
+                    <li><a href="E:\bhadresh\portfolio-website\Compro.html">Complet Project</a></li>
+                    <li><a href="E:\bhadresh\portfolio-website\aboutme.html">About Me</a></li>
+                    <li><a href="E:\bhadresh\portfolio-website\contact.html">Contact</a></li>
+                    <div class="call">
+                       <a href="https://api.whatsapp.com/send?phone=9898394548"> +91 9898394548<span>(whatsapp)</a></span>
+                    </div>
+                </ul>
+               
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="fsection">
+            <div class="lside">
+                Hiiii, My name is Chauhan Bhadresh, 
+                I am a
+                <span id="element"></span><br>
+                Devloper
+            </div>
+            <div class="rside">
+                <img src="https://i.pinimg.com/originals/75/e7/ef/75e7ef7aa27009befb076509382b86b8.gif" alt="no fount"/>
+            </div>
+
+        </section>
+        <hr>
+        <section class="ssection">
+            <div class="tit">
+                <h1>My Work Expriance</h1>
+             </div>
+            <div class="box">
+                <div class="vertical">
+                    <div class="v-title"><h3>Web Devloper- (2018)</h3>
+                        <div class="v-desc">i am Front-end devloper </div>
+                    </div>
+                    
+                </div>
+                <div class="vertical">
+                    <div class="v-title"><h3>React.js Devloper-(2022)</h3>
+                        <div class="v-desc">i am REact.js.js devloper </div>
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div class="v-title"><h3>Node.js Devloper-(2022)</h3>
+                        <div class="v-desc">i am node.js devloper </div>
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div class="v-title"><h3>Wordpress Devloper-(2022)</h3>
+                        <div class="v-desc">i am wordpress devloper </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr><br>
+        <section class="s3">
+            <div class="card">
+                <img src="reactlogo.jpeg" alt="Card Image">
+                <div class="card-content">
+                  <h3>REACT.JS</h3>
+                  <p>React is a JavaScript library for building user interfaces.
+
+                    React is used to build single-page applications.
+                    
+                    React allows us to create reusable UI components.</p><br>
+                    <button class="btn">Contact Me</button>
+                </div>
+              </div>
+
+              <div class="card">
+                <img src="node.jpg" alt="Card Image">
+                <div class="card-content">
+                  <h3>NODE.JS</h3>
+                  <p>NodeJS isn’t a framework, and it’s not a programing language. It provides an event-driven,
+                     non-blocking (asynchronous) I/O and cross-platform runtime environment for 
+                     building highly scalable server-side applications using JavaScript.</p><br>
+                     <button class="btn">Contact Me</button>
+                </div>
+              </div>
+
+              <div class="card">
+                <img src="logo-wordpress.png" alt="Card Image">
+                <div class="card-content">
+                  <h3>WORDPRESS</h3>
+                  <p> WordPress is the simplest, most popular way to create your own website or blog. In fact,
+                     WordPress powers over 43.3% of all the websites on the Internet.
+                     Yes – more than one in four websites that you visit are likely powered by WordPress.</p><br>
+                     <button class="btn">Contact Me</button>
+                </div>
+              </div>
+
+              <div class="card">
+                <img src="front.jpg" alt="Card Image">
+                <div class="card-content">
+                  <h3>FRONTEND DEVLOPER</h3>
+                  <p>A Front-End Developer is someone who creates websites and web applications.
+                    You can think of Front-End as client-side and Back-End as server-side.
+                    The basic languages for Front-End Development are HTML, CSS, and JavaScript.</p><br>
+                    <button class="btn">Contact Me</button>
+                </div>
+              </div>
+
+        </section>
+<!-- client review code -->
+
+      <h3>Client Reviews</h3>
+      <div class="client-reviews">
+        <div class="review">
+          <img src="client1.jpg" alt="Client 1">
+          <blockquote>
+            <p>"Working with this front-end developer team was a great experience. They understood our requirements and delivered an exceptional website that exceeded our expectations."</p>
+            <cite>- Client 1</cite>
+          </blockquote>
+        </div>
+        <div class="review">
+          <img src="client2.jpg" alt="Client 2">
+          <blockquote>
+            <p>"The front-end developer team's attention to detail and creativity are commendable. They brought our vision to life with a stunning website design and smooth user experience."</p>
+            <cite>- Client 2</cite>
+          </blockquote>
+        </div>
+      </div><br>
+      <div class="client-reviews">
+        <div class="review">
+          <img src="client3.jpg" alt="Client 1">
+          <blockquote>
+            <p>"Working with this front-end developer team was a great experience. They understood our requirements and delivered an exceptional website that exceeded our expectations."</p>
+            <cite>- Client 3</cite>
+          </blockquote>
+        </div>
+        <div class="review">
+          <img src="client4.jpg" alt="Client 2">
+          <blockquote>
+            <p>"The front-end developer team's attention to detail and creativity are commendable. They brought our vision to life with a stunning website design and smooth user experience."</p>
+            <cite>- Client 4</cite>
+          </blockquote>
+        </div>
+      </div>
+        <br>
+        <br>
+
+        <footer class="footer">
+            <div class="container">
+              <div class="footer-columns">
+                <div class="footer-column">
+                  <h3>About Us</h3>
+                  <p>This is my personal website and i describe my expriance into this website.</p>
+                  <div class="social-icons">
+                    <a href="#" class="social-icon">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="footer-column">
+                  <h3>Services</h3>
+                  <ul>
+                    <li>Web Design</li>
+                    <li>Development</li>
+                    <li>Wordpress Devlopment</li>
+                  </ul>
+                </div>
+                <div class="footer-column">
+                  <h3>Contact</h3>
+                  <p>Email: bhadreshkolichuahn57@gmail.com</p>
+                  <p>Phone: +91 9898394548</p>
+                </div>
+              </div>
+
+            </div>
+          </footer>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script> 
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Front-end', 'React.js','Node.js'],
+          typeSpeed: 50,
+          loop: true,
+          loopCount: Infinity,
+        });
+      </script>
+</body>
+</html>
